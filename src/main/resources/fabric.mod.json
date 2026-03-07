@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "jinun",
+  "version": "${version}",
+  "name": "Jinun",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/jinun/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.Aaeli.jinun.client.JinunClient"
+    ],
+    "main": [
+      "com.Aaeli.jinun.Jinun"
+    ]
+  },
+  "mixins": [
+    "jinun.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
