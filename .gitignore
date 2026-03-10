@@ -1,0 +1,5 @@
+echo ".gradle/
+.idea/
+build/
+run/
+out/" > .gitignore
