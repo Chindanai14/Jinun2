@@ -3,14 +3,17 @@
   "minVersion": "0.8",
   "package": "com.Aaeli.jinun.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-  ],
+  "mixins": [],
   "client": [
+    "MinecraftClientMixin",
+    "ClientConnectionMixin",
+    "PlayerMoveC2SPacketAccessor",
+    "KeyboardMixin",
+    "KeyInputAccessor",
+    "ChatScreenMixin",
+    "InGameHudMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  },
-  "overwrites": {
-    "requireAnnotations": true
   }
 }

@@ -3,18 +3,18 @@
   "id": "jinun",
   "version": "${version}",
   "name": "Jinun",
-  "description": "",
-  "authors": [],
+  "description": "Tier-1 Fabric Client Engine",
+  "authors": ["Aaeli"],
   "contact": {},
   "license": "All-Rights-Reserved",
   "icon": "assets/jinun/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "com.Aaeli.jinun.client.JinunClient"
-    ],
     "main": [
       "com.Aaeli.jinun.Jinun"
+    ],
+    "client": [
+      "com.Aaeli.jinun.client.JinunClient"
     ]
   },
   "mixins": [
@@ -23,6 +23,7 @@
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
-    "minecraft": "${minecraft_version}"
+    "minecraft": "${minecraft_version}",
+    "java": ">=21"
   }
 }
